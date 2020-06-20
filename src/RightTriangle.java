@@ -1,6 +1,31 @@
 public class RightTriangle {
 
     boolean isRightTriangle(Triangle triangle) {
-        return triangle.angle1 == 90 || triangle.angle2 == 90 || triangle.angle3 == 90;
+        int result = triangle.side2 * triangle.side2 + triangle.side3 * triangle.side3;
+        int hypotenuse = triangle.side1 * triangle.side1;
+        int result2 = triangle.side3 * triangle.side3 + triangle.side1 * triangle.side1;
+        int hypotenuse2 = triangle.side2 * triangle.side2;
+        int result3 = triangle.side1 * triangle.side1 + triangle.side2 * triangle.side2;
+        int hypotenuse3 = triangle.side3 * triangle.side3;
+        if (hypotenuse == result) {
+            return hypotenuse == result;
+        } else if (hypotenuse2 == result2) {
+            return hypotenuse2 == result2;
+        } else {
+            return hypotenuse3 == result3;
+        }
     }
-}
+    /*
+    boolean isRightTriangle1(Triangle triangle) {
+        int result2 = triangle.side3 * triangle.side3 + triangle.side1 * triangle.side1;
+        int hypotenuse2 = triangle.side2 * triangle.side2;
+        return hypotenuse2 == result2;
+    }
+    boolean isRightTriangle2(Triangle triangle) {
+        int result3 = triangle.side1 * triangle.side1 + triangle.side2 * triangle.side2;
+        int hypotenuse3 = triangle.side3 * triangle.side3;
+        return hypotenuse3 == result3;
+    }
+*/
+
+    }

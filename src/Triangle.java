@@ -1,11 +1,11 @@
 public class Triangle {
-    int angle1;
-    int angle2;
-    int angle3;
+    int side1;
+    int side2;
+    int side3;
 
-    Triangle(int angle1, int angle2, int angle3) {
-        this.angle1 = angle1;
-        this.angle2 = angle2;
-        this.angle3 = angle3;
+    Triangle(int side1, int side2, int side3) {
+        this.side1 = side1;
+        this.side2 = side2;
+        this.side3 = side3;
     }
 }
