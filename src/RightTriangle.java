@@ -7,13 +7,7 @@ public class RightTriangle {
         int hypotenuse2 = triangle.side2 * triangle.side2;
         int result3 = triangle.side1 * triangle.side1 + triangle.side2 * triangle.side2;
         int hypotenuse3 = triangle.side3 * triangle.side3;
-        if (hypotenuse == result) {
-            return hypotenuse == result;
-        } else if (hypotenuse2 == result2) {
-            return hypotenuse2 == result2;
-        } else {
-            return hypotenuse3 == result3;
-        }
+        return (hypotenuse == result) || (hypotenuse2 == result2) || (hypotenuse3 == result3);
     }
     /*
     boolean isRightTriangle1(Triangle triangle) {
